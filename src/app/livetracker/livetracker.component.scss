@@ -1,0 +1,20 @@
+.theadclass{
+    background: #848484;
+    color: #fff;
+}
+.table td{
+    padding: 7px 10px;
+    font-size: 13px;
+}
+.theadclass th{
+    border: 0px;
+    font-size: 13px;
+    padding: 10px 11px;
+}
+.table{
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    background: linear-gradient(to left bottom, #ffc9c9, #f4ddd3, #ffecd4, #f8ecc3, #ddefbb);
+    box-shadow: 0px 2px 5px 0px #808080;
+}

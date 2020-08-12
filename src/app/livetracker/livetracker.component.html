@@ -1,0 +1,107 @@
+<section class="hero-banner">
+    <div class="container">
+        <div class="hero-banner-content">
+            <div class="banner-box-list">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1> COVID-19 Live Updates In <span>The World </span> <span class="currdate"> {{currentDate}} </span></h1>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-banner-box">
+                            <div class="icon">
+                                <img src="assets/img/icon6.png" alt="icon">
+                            </div>
+                            <h3 class="odometer" >  {{summaryData?.Global?.TotalConfirmed | number}}  <span> <i class='bx bx-arrow-back bx-rotate-90' ></i>{{summaryData?.Global?.NewConfirmed | number}} </span>  </h3>
+                            <p>Confirmed Cases</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-banner-box">
+                            <div class="icon">
+                                <img src="assets/img/icon7.png" alt="icon">
+                            </div>
+                            <h3 class="odometer text-success" > {{summaryData?.Global?.TotalRecovered | number}} <span> <i class='bx bx-arrow-back bx-rotate-90' ></i> {{summaryData?.Global?.NewRecovered | number}} </span>  </h3>
+                            <p>Recovered</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-banner-box">
+                            <div class="icon">
+                                <img src="assets/img/icon8.png" alt="icon">
+                            </div>
+                            <h3 class="odometer text-secondary" > {{summaryData?.Global?.TotalDeaths | number}}   <span><i class='bx bx-arrow-back bx-rotate-90' ></i> {{summaryData?.Global?.NewDeaths | number}} </span></h3>
+                            <p>Deaths</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/banner-map.png" alt="image">
+        </div>
+    </div>
+</section>
+
+<section class="allcoronacases">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="text-danger">Highest Confirmed Cases </h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="theadclass">
+                            <th>S.N.</th>
+                            <th>Country</th>
+                            <th>Total Confirmed</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let country of highlyConfirmedData; let i=index">
+                                <td> {{i+1}} </td>
+                                <td>{{country.Country}}</td>
+                                <td>{{country.TotalConfirmed | number}}  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-success">Highest Recovered Cases</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="theadclass">
+                            <th>S.N.</th>
+                            <th>Country</th>
+                            <th>Total Recovered</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let country of highlyRecoveredData; let i=index">
+                                <td> {{i+1}} </td>
+                                <td>{{country.Country}}</td>
+                                <td>{{country.TotalRecovered | number}} </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-dark">Highest Death Cases</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="theadclass">
+                            <th>S.N.</th>
+                            <th>Country</th>
+                            <th>Total Death</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let country of highlyDeathData; let i=index">
+                                <td> {{i+1}} </td>
+                                <td>{{country.Country}}</td>
+                                <td>{{country.TotalDeaths | number}} </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

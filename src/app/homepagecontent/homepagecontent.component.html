@@ -1,0 +1,194 @@
+
+<section class="hero-banner">
+    <div class="container">
+        <div class="hero-banner-content">
+            <div class="banner-box-list">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1> COVID-19 Live Updates In <span> India </span> <span class="currdate"> {{currentDate}} </span></h1>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-banner-box">
+                            <div class="icon">
+                                <img src="assets/img/icon6.png" alt="icon">
+                            </div>
+                            <h3 class="odometer" >  {{indiaData?.TotalConfirmed | number}}  <span> <i class='bx bx-arrow-back bx-rotate-90' ></i>{{indiaData?.NewConfirmed | number}} </span>  </h3>
+                            <p>Confirmed Cases</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-banner-box">
+                            <div class="icon">
+                                <img src="assets/img/icon7.png" alt="icon">
+                            </div>
+                            <h3 class="odometer text-success" > {{indiaData?.TotalRecovered | number}} <span> <i class='bx bx-arrow-back bx-rotate-90' ></i>{{indiaData?.NewRecovered | number}} </span>  </h3>
+                            <p>Recovered</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-banner-box">
+                            <div class="icon">
+                                <img src="assets/img/icon8.png" alt="icon">
+                            </div>
+                            <h3 class="odometer text-secondary" > {{indiaData?.TotalDeaths | number}}   <span><i class='bx bx-arrow-back bx-rotate-90' ></i>{{indiaData?.NewDeaths | number}}</span></h3>
+                            <p>Deaths</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/banner-map.png" alt="image">
+        </div>
+    </div>
+</section>
+
+<section class="symptoms-section bg-white-color pb-100">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Symptoms</span>
+            <h2>Corona Virus Symptoms</h2>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="symptoms-box-list">
+                    <div class="box-item">
+                        <div class="img">
+                            <img src="assets/img/symptoms-icon1.png" alt="image">
+                        </div>
+                        <h3>Cough</h3>
+                        <p>Considering that COVID-19 irritates lung tissue, the cough is dry and persistent. It is accompanied with shortness of breath.</p>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="img">
+                            <img src="assets/img/symptoms-icon2.png" alt="image">
+                        </div>
+                        <h3>Strong Headache</h3>
+                        <p>A headache is n't a common symptom of the virus, but about 14% of people infected with corona have experienced it, according to the Report of the WHO on COVID-19.</p>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="img">
+                            <img src="assets/img/symptoms-icon3.png" alt="image">
+                        </div>
+                        <h3>Confusion</h3>
+                        <p>Doctors have observed neurological symptoms, including confusion, stroke and seizures, in a small subset of Covid-19 patients.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="symptoms-img">
+                    <img src="assets/img/symptoms-img2.png" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="symptoms-box-list">
+                    <div class="box-item">
+                        <div class="img">
+                            <img src="assets/img/symptoms-icon4.png" alt="image">
+                        </div>
+                        <h3>Hot Fever</h3>
+                        <p>Fever is one of the main symptoms of sickness from coronavirus infection, along with cough and shortness of breath. </p>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="img">
+                            <img src="assets/img/symptoms-icon5.png" alt="image">
+                        </div>
+                        <h3>Shortness Of Breath</h3>
+                        <p>Shortness of breath can make it hard to breathe deeply. You may feel winded, or as if you can’t get enough air into your lungs. </p>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="img">
+                            <img src="assets/img/symptoms-icon6.png" alt="image">
+                        </div>
+                        <h3>Sore Throat</h3>
+                        <p>A sore throat can be one symptom of COVID-19. At this point in time, it isn’t well documented when exactly a sore throat occurs in the course of the infection. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="symptoms-shape1"><img src="assets/img/symptoms-shape1.png" alt="image"></div>
+    <div class="symptoms-shape2"><img src="assets/img/symptoms-shape2.png" alt="image"></div>
+</section>
+
+<section class="about-section pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-img">
+                    <img src="assets/img/about-img3.png" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    <span class="sub-title">Covid-19</span>
+                    <h2>About Coronavirus Disease</h2>
+                    <p>In 2019, the Centers for Disease Control and Prevention (CDC) started monitoring the outbreak of a new coronavirus, SARS-CoV-2, which causes the respiratory illness now known as COVID-19. Authorities first identified the virus in Wuhan, China.</p>
+                    <p>More than 78,191 people have contracted the virus in China. Health authorities have identified many other people with COVID-19 around the world, including in the United States. On January 31, 2020, the virus passed from one person to another in the U.S.</p>
+                    <blockquote>
+                        <p>The World Health Organization (WHO) have declared a public health emergency relating to COVID-19.</p>
+                    </blockquote>
+                    <p>Since then, this strain has been diagnosed in several U.S. residents. The CDC have advised that it is likely to spread to more people. COVID-19 has started causing disruption in at least 25 other countries.</p>
+
+                    <a href="#" class="default-btn"><i class="flaticon-open-book"></i> Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-shape1"><img src="assets/img/about-shape2.png" alt="image"></div>
+</section>
+
+<section class="spread-virus-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="spread-virus-content">
+                    <span class="sub-title">Spreads</span>
+                    <h2>How Covid-19 Spreads</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <img src="assets/img/spread-virus/icon1.png" alt="image">
+                            </div>
+                            <h3>Human Contact</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="assets/img/spread-virus/icon2.png" alt="image">
+                            </div>
+                            <h3>Air Transmission</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="assets/img/spread-virus/icon3.png" alt="image">
+                            </div>
+                            <h3>Contaminated Objects</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="spread-virus-image">
+                    <img src="assets/img/spread-virus/spread-img.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spread-shape3"><img src="assets/img/spread-virus/spread-shape.png" alt="image"></div>
+</section>
